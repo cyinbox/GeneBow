@@ -12,7 +12,7 @@
 # Last update 06/16/2017
 #
 # Citation
-# Yin, C. & Yau, S.S.-T. (2017) GeneBow: a pipeline for detecting antibiotic resistance genes.
+# Yin, C. (2017) GeneBow: a pipeline for detecting antibiotic resistance genes.
 #
 '''
 # Program to construct ARG sequences 
