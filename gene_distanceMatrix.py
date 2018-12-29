@@ -132,16 +132,13 @@ else:
 #-----------------------------------------------------------------------------
 # 4. Compute pair-wise distances of genes/genomes
 file = open('distances.txt', 'w')
+
 # MATLAB program phylogeneticTreeByDistances.m uses this distance file to construct phylogenetic tree
 # https://github.com/cyinbox/NGS/blob/master/phylogeneticTreeByDistances.m
 
 from Bio import SeqIO
 import gene_CGR as cgr
-'''
-for record in SeqIO.parse("genes.fasta", "fasta"):
-    print(record.id) #header， 
-    print(record.seq)
-'''
+
 records = list(SeqIO.parse("genes.fasta", "fasta"))
 m = len(records)
 
