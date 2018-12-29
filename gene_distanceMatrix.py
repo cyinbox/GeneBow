@@ -105,14 +105,11 @@ for geneId, geneName in genes.items():
   else:
    print('Not unique name:',geneName)
 
-# Retrieve Genbank sequence data and write sequences to a fasta file
-headers=[]
-sequences=[]
-
+# 3. Retrieve Genbank sequence data and write sequences to a fasta file
+headers = []
+sequences = []
 m = len(geneIds)
 
-#----------------------------------------------------------------------------
-# 3. Retrieve gene sequences and write to a fasta file
 from pathlib import Path
 
 fileName ='genes.fasta'
